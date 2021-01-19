@@ -30,11 +30,12 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+import flex_sphinx_theme
 extensions = [
     'sphinx.ext.mathjax',
-#    'sphinx.ext.githubpages'
-#    'breathe',
-#   'exhale'
+    #    'sphinx.ext.githubpages'
+    #    'breathe',
+    #   'exhale'
 ]
 
 # Setup the breathe extension.
@@ -42,13 +43,13 @@ breathe_default_project = "Ripple"
 
 # Setup the exhale extensions.
 exhale_args = {
-    "containmentFolder"     : "./api",
-    "rootFileName"          : "ripple_api_root.rst",
-    "rootFileTitle"         : "Ripple API",
-    "doxygenStripFromPath"  : "..",
-    "createTreeView"        : True,
-    "exhaleExecutesDoxygen" : True,
-    "exhaleUseDoxyfile"     : True
+    "containmentFolder": "./api",
+    "rootFileName": "ripple_api_root.rst",
+    "rootFileTitle": "Ripple API",
+    "doxygenStripFromPath": "..",
+    "createTreeView": True,
+    "exhaleExecutesDoxygen": True,
+    "exhaleUseDoxyfile": True
 }
 
 # Specify which language is the primary one.
@@ -106,11 +107,10 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-import pytorch_sphinx_theme
 #html_theme = 'sphinx_rtd_theme'
-html_theme = 'pytorch_sphinx_theme'
+html_theme = 'flex_sphinx_theme'
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_theme_path = ["~/Software/flexible_sphinx_theme"]
+html_theme_path = ["~/Software/flex_sphinx_theme"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -128,12 +128,12 @@ html_theme_path = ["~/Software/flexible_sphinx_theme"]
 #
 # This is required for the alabaster theme
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
-#html_sidebars = {
+# html_sidebars = {
 #    '**': [
 #        'relations.html',  # needs 'show_related': True theme option to display
 #        'searchbox.html',
 #    ]
-#}
+# }
 
 
 # -- Options for HTMLHelp output ------------------------------------------
@@ -191,6 +191,3 @@ texinfo_documents = [
      author, 'Ripple', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
