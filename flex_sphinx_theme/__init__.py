@@ -11,7 +11,7 @@ This is based off the pytorch sphinx theme from:
 """
 from os import path
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __version_full__ = __version__
 
 
