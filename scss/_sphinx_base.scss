@@ -581,11 +581,11 @@ article.pytorch-article {
   }
 
   .note .admonition-title {
-    background: #54c7ec;
+    background: $note_color;
   }
 
   .warning .admonition-title {
-    background: #e94f3b;
+    background: $warning_color;
   }
 
   .tip .admonition-title {
